@@ -13,7 +13,7 @@
 		
 		// Operations
 		function clean_cache();		
-		function markup_and_flush();		// Record cache into object member and flush the cache contents.		
+		function markup_and_flush();	// Record cache into object member and flush the cache contents.		
 		function markup_from_cache();	// Turn off cache and output markup to screen.
 		function output_markup();
 		function time_elapsed();
@@ -21,9 +21,8 @@
 	
 	class PageCache implements iPageCache
 	{
-		private 
-			$markup = NULL,
-			$time_start	= NULL;
+		private $markup = NULL;
+		private $time_start	= NULL;
 		
 		public function __construct()
 		{
