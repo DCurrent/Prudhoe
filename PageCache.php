@@ -1,6 +1,6 @@
 <?php
 
-	namespace dc\cache;
+	namespace dc\prudhoe;
 
 	interface iPageCache
 	{
